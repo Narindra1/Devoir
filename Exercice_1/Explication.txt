@@ -1,0 +1,10 @@
+Bibliothèque statique:
+g++ -c *.cpp //creation d'objet.o
+ar -rv libGeometry.a -o *.o  // commande qui permet de créer la Bibliothèque statique
+
+Bibliothèque dynamique:
+
++ -fPIC -c *.cpp // commande qui permet l'objet.o
+
+g++ -o libGeometry.so -shared *.o // commande pour creer la Bibliothèque dynamique
+
